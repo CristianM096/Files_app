@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class File extends Model
 {
-    use HasFactory;
+    protected $illable = [
+        'name',
+        'user_id'
+    ];
 }
